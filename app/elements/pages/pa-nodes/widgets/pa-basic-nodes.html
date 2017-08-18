@@ -1,0 +1,31 @@
+<link rel="import" href="pa-node.html">
+
+<dom-module id="pa-basic-nodes">
+  <template>
+    <style include="shared-styles"></style>
+
+    <pa-node
+        headers='["#", "Name", "Mac Address", "IP Address", "Image", "Created at"]'
+        data='[ 
+		[1, "Dell Computer", "FF:FF:FF:FF:FF:FF", "10.111.0.0", "#1", "2017-08-14"]
+		,[2, "Vmware ESXi Host 1", "FF:FF:FF:FF:FF:FF", "202.242.21.*", "#2", "2017-08-14"]
+		]'></pa-node>
+      <paper-dialog id="modal" modal>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore$
+        <div class="buttons">
+          <paper-button dialog-confirm autofocus>Add</paper-button>
+        </div>
+     </paper-dialog>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'pa-basic-nodes'
+      });
+    })();
+  </script>
+
+</dom-module>

@@ -1,0 +1,28 @@
+<link rel="import" href="pa-image.html">
+
+<dom-module id="pa-basic-images">
+  <template>
+    <style include="shared-styles"></style>
+
+    <pa-image
+        headers='["#", "Name", "Description", "path", "Created at"]'
+        data='[ 
+		[1, "Online Compiler Node", "Distributed Online Compiler Server on Docker", "tftp://", "2017-08-14"]
+		,[2, "Minecraft Server", "It is host of Minecraft Multi Play", "tftp://", "2017-08-14"]
+		,[3, "Soft Ether VPN Server", "Soft Ether VPN provide Virtual Private Network ", "tftp://", "2017-08-14"]
+		,[4, "Kubernetes Cluster", "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.", "tftp://", "2017-08-14"]
+		,[5, "Web Server", "HTTP/HTTPS Server kstm.shinshu-u.ac.jp", "tftp://", "2017-08-14"]
+		]'></pa-image>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'pa-basic-images'
+      });
+    })();
+  </script>
+
+</dom-module>

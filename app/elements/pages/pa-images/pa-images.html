@@ -1,0 +1,32 @@
+<link rel="import" href="widgets/pa-basic-images.html">
+
+<dom-module id="pa-images">
+  <template>
+    <style include="shared-styles"></style>
+
+    <pa-widgets widgets="{{widgets}}"></pa-widgets>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'pa-images',
+
+        properties: {
+          widgets: {
+            type: Array,
+            value: [
+              {
+                title: 'Bootable Images',
+                component: 'pa-basic-images'
+              }
+            ]
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>

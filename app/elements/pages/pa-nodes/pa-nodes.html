@@ -1,0 +1,32 @@
+<link rel="import" href="widgets/pa-basic-nodes.html">
+
+<dom-module id="pa-nodes">
+  <template>
+    <style include="shared-styles"></style>
+
+    <pa-widgets widgets="{{widgets}}"></pa-widgets>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'pa-nodes',
+
+        properties: {
+          widgets: {
+            type: Array,
+            value: [
+              {
+                title: 'Compute Nodes',
+                component: 'pa-basic-nodes'
+              }
+            ]
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
